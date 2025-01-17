@@ -1,0 +1,12 @@
+kind: pipeline
+name: Test stage
+
+steps:
+- name: First step
+  image: alpine
+  commands:
+  - echo "this is first test step"
+
+trigger:
+  branch:
+  - main
